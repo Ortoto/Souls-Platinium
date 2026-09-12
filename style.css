@@ -1,7 +1,53 @@
-h1 {
-    color: #333;
-    font-size: 40px;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin-bottom: 20px;
+body {
+    margin: 0px;
+    min-height: 2000px;
+}
+
+#navbar {
+  background-color: #000; 
+  position: fixed;          /*l'élément est fixé par rapport à la fenêtre du navigateur*/
+  display: flex;            /*Permet de pouvoir utiliser le système Flexbox qui permet d'organiser les élément a l'interieur de la navbar*/
+  align-items: center;      /*Permet de centrer l'élément dans ça propre zone */
+  top: 0; 
+  width: 100%; 
+  height: 65px;
+}
+
+#navbar a {
+  float: left;
+  color: white;
+  display: flex;
+  text-align: center;       /*Centre en Vertical grace a la display:flex / inverse de justify-content qui lui le fait horizontalement*/
+  padding: 15px;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  color: #DAA520;
+}
+
+
+#bandeau_elden_ring {
+    background-image:url("/Images/elden_ring/bandeau_background_fond.jpg");
+    background-position: 50% ;
+    position: fixed;        
+
+    width: 100%;
+    height: 50px;
+    top: 65px;
+    transition: top 0.75s;
+    
+    display: flex;              
+    justify-content: center;    /*Centre horizontalement grace a la display:flex*/
+    align-items: center;        /*Centre verticalement grace a la display:flex*/
+}   
+
+#bandeau_elden_ring.cache {
+    top: -50px;
+}
+
+#elden_ring_img {
+    display: flex;
+    justify-content: center;
+    width: 200px;
 }
