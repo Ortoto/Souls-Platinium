@@ -28,7 +28,7 @@ body {
 
 
 #bandeau_elden_ring {
-    background-image:url("/Images/elden_ring/bandeau_background_fond.jpg");
+    background-image:url("Images/elden_ring/bandeau_background_fond.jpg");
     background-position: 50% ;
     position: fixed;        
 
