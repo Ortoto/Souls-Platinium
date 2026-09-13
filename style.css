@@ -1,6 +1,10 @@
+
+
+
 body {
     margin: 0px;
     min-height: 2000px;
+    background-color: rgb(137, 126, 212);
 }
 
 #navbar {
@@ -50,4 +54,88 @@ body {
     display: flex;
     justify-content: center;
     width: 200px;
+}
+
+#sommaire {
+  display:flexbox;
+  width: 100%;
+  margin-top: 120px;
+  padding-bottom: 30px;
+}
+
+#sommaire h1 {
+  margin-left: 15%;
+  font-family: "Dynalight", cursive;
+  font-size: 75px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#sommaire li {
+  margin-left: 30%;
+  font-family: "IBM Plex Serif", serif;
+  font-size: 20px;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.succes {
+  display: flex;
+  margin: auto;
+  margin-bottom: 15px;
+  border: 5px solid black;
+  width:65%;
+  overflow:auto;
+  
+}
+.succes div {
+  float:left;
+}
+
+.div_images {
+  border: 5px solid black;
+}
+
+.images {
+  width: 300px;
+  height: 170px;
+  display: block;
+}
+.description {
+  background-color: aqua;
+  box-sizing: border-box; /*Permet de comprendre dans le width la totaliter des couche = contenu + padding + bordure */
+  flex: 1;                /*permet de prendre toute la largeur possible*/
+}
+
+.nom_succes{
+  margin-left: 7%;
+  font-family: "Dynalight", cursive;
+  font-size: 35px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.description_succes {
+  margin-left: 7%;
+  font-family: "IBM Plex Serif", serif;
+  font-size: 20px;
+  font-weight: 100;
+  font-style: normal;
+}
+
+@media (width < 950px) {
+  .succes {
+    flex-direction: column;   /*permet de passer des div en ligne pour les placer en colonne*/
+  }
+
+  .images {
+    margin: auto;
+  }
+  .description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+  }
 }
