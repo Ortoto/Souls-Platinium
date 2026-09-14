@@ -71,6 +71,32 @@ body {
   font-style: normal;
 }
 
+h1 {
+  margin-left: 10%;
+  margin-bottom: 50px;
+  font-family: "Dynalight", cursive;
+  color: black;
+  font-size: 60px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a:visited {
+  color: black;
+}
+
+h1 a {
+  text-decoration: none;
+}
+
+#sommaire a {
+  text-decoration: none;
+}
+
+#titre_liste_aide {
+  margin-top: 150px;
+}
+
 #sommaire li {
   margin-left: 30%;
   font-family: "IBM Plex Serif", serif;
@@ -90,10 +116,6 @@ body {
 }
 .succes div {
   float:left;
-}
-
-.div_images {
-  border: 5px solid black;
 }
 
 .images {
@@ -126,9 +148,13 @@ body {
 @media (width < 950px) {
   .succes {
     flex-direction: column;   /*permet de passer des div en ligne pour les placer en colonne*/
+    border: none;
   }
 
   .images {
+    width: 280px;
+    height: 160px;
+    border: 10px solid black;
     margin: auto;
   }
   .description{
@@ -137,5 +163,6 @@ body {
     align-items: center;
     margin: auto;
     width: 100%;
+    border: 5px solid black;
   }
 }
