@@ -61,6 +61,7 @@ body {
   width: 100%;
   margin-top: 120px;
   padding-bottom: 30px;
+  scroll-margin-top: 500px;
 }
 
 #sommaire h1 {
@@ -79,6 +80,10 @@ h1 {
   font-size: 60px;
   font-weight: 400;
   font-style: normal;
+}
+
+a {
+  color: #000;
 }
 
 a:visited {
@@ -103,6 +108,13 @@ h1 a {
   font-size: 20px;
   font-weight: 100;
   font-style: normal;
+}
+
+#titre_liste_succes {
+  scroll-margin-top: 70px;
+}
+#titre_liste_aide{
+  scroll-margin-top: 70px;
 }
 
 .succes {
