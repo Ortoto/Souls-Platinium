@@ -122,8 +122,9 @@ h1 a {
   margin: auto;
   margin-bottom: 15px;
   border: 5px solid black;
-  width:65%;
+  width:50%;
   overflow:auto;
+  background-color: aqua;
   
 }
 .succes div {
@@ -131,12 +132,13 @@ h1 a {
 }
 
 .images {
-  width: 300px;
-  height: 170px;
+  width: 150px;
+  height: 90px;
   display: block;
+  margin-top:20%;
+  margin-left: 10%;
 }
 .description {
-  background-color: aqua;
   box-sizing: border-box; /*Permet de comprendre dans le width la totaliter des couche = contenu + padding + bordure */
   flex: 1;                /*permet de prendre toute la largeur possible*/
 }
